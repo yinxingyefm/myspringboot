@@ -1,6 +1,5 @@
 package com.ywj.myspringboot.entity;
 
-import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
 import lombok.Data;
@@ -13,40 +12,35 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author ywj
- * @since 2021-07-28
+ * @since 2021-07-30
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class User implements Serializable {
+public class ExtendSysVar implements Serializable {
 
     private static final long serialVersionUID=1L;
 
     /**
-     * 主键ID
+     * 扩展系统变量ID
      */
-    @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    @TableId("ID")
+    private String id;
 
     /**
-     * 姓名
+     * 扩展系统变量名称
      */
     private String name;
 
     /**
-     * 年龄
+     * 扩展系统变量值
      */
-    private Integer age;
+    private String value;
 
     /**
-     * 邮箱
+     * 是否加密(1加密，0不加密)
      */
-    private String email;
-
-    /**
-     * 所属班级
-     */
-    private Integer classId;
+    private String encrypt;
 
 
 }

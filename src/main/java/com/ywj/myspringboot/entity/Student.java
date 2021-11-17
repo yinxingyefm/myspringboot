@@ -13,40 +13,21 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author ywj
- * @since 2021-07-28
+ * @since 2021-07-30
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-public class User implements Serializable {
+public class Student implements Serializable {
 
     private static final long serialVersionUID=1L;
 
-    /**
-     * 主键ID
-     */
     @TableId(value = "id", type = IdType.AUTO)
-    private Long id;
+    private Integer id;
 
-    /**
-     * 姓名
-     */
     private String name;
 
-    /**
-     * 年龄
-     */
     private Integer age;
-
-    /**
-     * 邮箱
-     */
-    private String email;
-
-    /**
-     * 所属班级
-     */
-    private Integer classId;
 
 
 }

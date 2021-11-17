@@ -1,6 +1,6 @@
 package com.ywj.myspringboot.service;
 
-import com.ywj.myspringboot.entity.User;
+import com.ywj.myspringboot.entity.ExtendSysVar;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author ywj
- * @since 2021-07-28
+ * @since 2021-07-30
  */
-public interface UserService extends IService<User> {
+public interface ExtendSysVarService extends IService<ExtendSysVar> {
 
 }

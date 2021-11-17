@@ -8,15 +8,12 @@
         <result column="name" property="name" />
         <result column="age" property="age" />
         <result column="email" property="email" />
+        <result column="class_id" property="classId" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, age, email
+        id, name, age, email, class_id
     </sql>
-
-    <select id="seleteByName" resultType="com.ywj.myspringboot.entity.User" parameterType="java.lang.String">
-        SELECT  * from  user where name =#{name}
-    </select>
 
 </mapper>

@@ -1,6 +1,6 @@
 package com.ywj.myspringboot.mapper;
 
-import com.ywj.myspringboot.entity.User;
+import com.ywj.myspringboot.entity.ExtendSysVar;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,9 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author ywj
- * @since 2021-07-28
+ * @since 2021-07-30
  */
-public interface UserMapper extends BaseMapper<User> {
-
+public interface ExtendSysVarMapper extends BaseMapper<ExtendSysVar> {
 
 }
